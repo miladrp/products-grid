@@ -1,10 +1,11 @@
 import { ThemeProvider } from '@material-ui/styles';
 import theme from './theme';
+import Products from "./components/Products";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      {/* TODO Display Products Here */}
+      <Products />
     </ThemeProvider>
   );
 }
