@@ -11,10 +11,10 @@ Please read the instructions and FAQ below before beginning.
 
 - Clone the repo: `git clone https://github.com/miladrp/products-grid.git`
 - Run these commands in Command Line:
-- `cd products-grid`
-- `npm install`
-- `npm run build`
-- `npm start`
+  - `cd products-grid`
+  - `npm install`
+  - `npm run build`
+  - `npm start`
 - Getting started page: `http://localhost:7000/`
 
 Features
