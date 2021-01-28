@@ -1,9 +1,21 @@
+## Creatella Challenge
+
 Products Grid
 ====
 
 This is an ecommerce site, where you can buy all sorts of ascii faces like `(ノ・∀・)ノ` and `¯_(ツ)_/¯`, in a wide variety of font sizes. The homepage should display a list of products for people to browse.
 
 Please read the instructions and FAQ below before beginning.
+
+## Quick start
+
+- Clone the repo: `git clone https://github.com/miladrp/products-grid.git`
+- Run these commands in Command Line:
+- `cd products-grid`
+- `npm install`
+- `npm run build`
+- `npm start`
+- Getting started page: `http://localhost:7000/`
 
 Features
 ----

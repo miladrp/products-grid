@@ -26,9 +26,7 @@ const useStyles = makeStyles(theme => ({
     avatar: {
         width: "100%",
         height: "90%",
-        minHeight: "200px",
-        margin: "auto 0",
-        borderRadius: 0
+        minHeight: "200px"
     },
     ellipsis: {
         margin: 0,
@@ -76,7 +74,7 @@ const Product = ({ product = {} }) => {
     return (
         <Card className={classes.root}>
             <CardContent className={classes.content}>
-                <Avatar className={classes.avatar} style={{ fontSize: product.size }}>
+                <Avatar variant="square" className={classes.avatar} style={{ fontSize: product.size }}>
                     {product.face}
                 </Avatar>
                 <Typography

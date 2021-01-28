@@ -25,9 +25,7 @@ const useStyles = makeStyles(theme => ({
     avatar: {
         width: "100%",
         height: "90%",
-        minHeight: "200px",
-        margin: "auto 0",
-        borderRadius: 0
+        minHeight: "200px"
     },
     actions: {
         margin: 0
@@ -54,7 +52,7 @@ const Ad = () => {
     return (
         <Card className={classes.root}>
             <CardContent className={classes.content}>
-                <Avatar className={classes.avatar} src={`/ads/?r=${random()}`} />
+                <Avatar variant="square" src={`/ads/?r=${random()}`} className={classes.avatar} />
             </CardContent>
             <Divider />
             <CardActions className={classes.actions}>
