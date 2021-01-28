@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { FormControl, InputLabel, NativeSelect, Grid, Typography } from '@material-ui/core';
 import Loading from "../Loading";
+import Product from '../Product';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -15,6 +16,12 @@ const useStyles = makeStyles(theme => ({
     margin: {
         margin: theme.spacing(1),
         minWidth: 100
+    },
+    card: {
+        cursor: "pointer",
+        "& > :hover": {
+            boxShadow: "0 0 10px 0"
+        }
     },
     end: {
         margin: "50px auto"
@@ -55,6 +62,10 @@ const Products = () => {
 
     return (
         <div onScroll={handleScroll} className={classes.root}>
+            <header>
+                <Typography variant="h1">Products Grid</Typography>
+                <Typography>Here you're sure to find a bargain on some of the finest ascii available to purchase. Be sure to peruse our selection of ascii faces in an exciting range of sizes and prices.</Typography>
+            </header>
             <div className={classes.content}>
                 <FormControl className={classes.margin}>
                     <InputLabel htmlFor="select-label">Order By</InputLabel>
@@ -85,15 +96,16 @@ const Products = () => {
                                 sm={6}
                                 xs={12}
                             >
-                                {/* TODO Display Product Here */}
+                                <Product product={product} />
                             </Grid>
+                            {/* TODO Display Ads */}
                         </React.Fragment>
                     ))}
                 </Grid>
                 {finished && <Typography align="center" className={classes.end}>~ end of catalogue ~</Typography>}
                 {loading && <Loading />}
             </div>
-        </div >
+        </div>
     )
 };
 

@@ -5,7 +5,7 @@ const Loading = () => {
     return <CircularProgress
         style={{
             display: 'block',
-            margin: `${window.innerHeight / 2 - 94}px auto`
+            margin: `${window.innerHeight / 4 }px auto`
         }}
     />
 };
