@@ -49,7 +49,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-const Product = ({ className, product = {} }) => {
+const Product = ({ product = {} }) => {
     const classes = useStyles();
 
     const formatDate = date => {

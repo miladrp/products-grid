@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/styles';
 import { FormControl, InputLabel, NativeSelect, Grid, Typography } from '@material-ui/core';
 import Loading from "../Loading";
 import Product from '../Product';
+import Ad from '../Ad';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -98,7 +99,18 @@ const Products = () => {
                             >
                                 <Product product={product} />
                             </Grid>
-                            {/* TODO Display Ads */}
+                            {/* After Every 20 Products Display an Advertisement */}
+                            {(i + 1) % 20 === 0 &&
+                                <Grid
+                                    className={classes.card}
+                                    item
+                                    lg={3}
+                                    md={4}
+                                    sm={6}
+                                    xs={12}
+                                >
+                                    <Ad />
+                                </Grid>}
                         </React.Fragment>
                     ))}
                 </Grid>
